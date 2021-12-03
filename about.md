@@ -4,15 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+**Mark 9:49-50:**
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+> "For everyone will be seasoned with fire, and every sacrifice will be seasoned with salt. Salt is good, but if the salt loses its flavor, how will you season it? Have salt in yourselves, and have peace with one another."
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+My name's Jason, I'm teaching good moral people how to code. The coding world needs way less sodomy. If you don't agree you can *git*, and I don't mean the software. On this site I'm posting warm-ups, command line references, and other things to help my students.
 
-
-[jekyll-organization]: https://github.com/jekyll
+BTA: **tartan_bear_2.0**
