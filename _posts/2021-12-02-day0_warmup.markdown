@@ -4,11 +4,11 @@ title:  "Day Zero: Crushing the Development Environment"
 date:   2021-12-02 18:30:50 -0700
 categories: jekyll update
 ---
-Today we're going to warm up with some pretty routine but essential stuff, I'll admit that being a developer is very usually NOT like the Matrix or War Games or any other G----ler romanticizing of people interacting with computers. But things will get fun during the course, trust me. 
+Today we're going to warm up with some pretty routine but essential stuff, I'll admit that being a developer is very usually NOT like the Matrix or War Games or any other G---ler romanticizing of people interacting with computers. But things will get fun during the course, trust me. 
 
 Fundamental to a software developer's toolbelt is his **development environment**.
 
-The development environment is what guarantees that a developer's tooling and software dependencies are the same as the machine upon which his sofware will run in **Production** (a.k.a. when it's making money or helping people or running live on the Internet where anyone can see it.) It also guarantees that his friends who are also are working on the same software will encounter the same bugs to fix that he does, and that a minimum of new bugs will be introduced in the course of development. Bugs are flaws in code that gross out users--understandably.
+The development environment is what guarantees that a developer's tooling and software dependencies are the same as the machine upon which his sofware will run in **Production** (a.k.a. when it's making money or helping people or running live on the Internet where anyone can see it.) It also guarantees that his friends who are also working on the software will encounter the same bugs to fix that he does, and that a minimum of new bugs will be introduced in the course of development. Bugs are flaws in code that gross out users--understandably.
 
 After we all get on the same page with the correct development environment, I hope to entice you for more by using a software called **Jekyll** to set up a coding project blog *just like this one*. With one final command from the command line you'll have your very own customizable blog accessible from the Internet.
 
@@ -40,6 +40,9 @@ You can think of a virtual machine as an operating system within an operating sy
 
 ![import-into-virtualbox1](/assets/images/day0/day0_vboximport2.png){:class="img-responsive"}
 
+Log In!
+---
+
 {:start="6"}
 6. When you first fire up the VM, you should see a login prompt I'll show below. 
 * The login username is *coderbear*
@@ -48,12 +51,18 @@ You can think of a virtual machine as an operating system within an operating sy
 ![import-into-virtualbox1](/assets/images/day0/day0_vboximport3.png){:class="img-responsive"}
 
 {:start="7"}
-7. You should finally get logged in and see your development desktop. You'll probably want to change the default password to something only you'll know. Let's get acquainted with the **command line interface** or **CLI**. Click the **Terminal** icon to the left to open a terminal, and then type in the command `passwd coderbear` to indicate that you want to change coderbear's password. Follow the prompts hitting enter each time.
+7. You should finally get logged in and see your development desktop. 
+
+Meet the CLI
+---
+
+{:start="8"}
+8. You'll probably want to change the default password to something only you'll know. Let's get acquainted with the **command line interface** or **CLI**. Click the **Terminal** icon to the left to open a terminal, and then type in the command `passwd coderbear` to indicate that you want to change coderbear's password. Follow the prompts hitting enter each time.
 
 ![import-into-virtualbox1](/assets/images/day0/day0_vboximport4.png){:class="img-responsive"}
 
-{:start="8"}
-8. Because it's a long operation and we don't want to waste class time, we're going to install the [**Ruby**][ruby-lang] version we'll need to make our coding blogs. This is the perfect example of setting up a development environment, we are defining the Ruby version we shall use for this project as `2.7.x`. As of this writing the latest offered by the installed tool `rbenv` is `2.7.5`, so let's install that with `rbenv install 2.7.5`
+{:start="9"}
+9. Because it's a long operation and we don't want to waste class time, we're going to install the [**Ruby**][ruby-lang] version we'll need to make our coding blogs. This is the perfect example of setting up a development environment, we are defining the Ruby version we shall use for this project as `2.7.x`. As of this writing the latest offered by the installed tool `rbenv` is `2.7.5`, so let's install that with `rbenv install 2.7.5`
 
 {% highlight terminal %}
 coderbear@coderbear-VirtualBox:~$ rbenv install 2.7.5
