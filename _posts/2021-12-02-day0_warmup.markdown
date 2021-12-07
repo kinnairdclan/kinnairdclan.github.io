@@ -62,7 +62,7 @@ Meet the CLI
 ![import-into-virtualbox1](/assets/images/day0/day0_vboximport4.png){:class="img-responsive"}
 
 {:start="9"}
-9. Because it's a long operation and we don't want to waste class time, we're going to install the [**Ruby**][ruby-lang] version we'll need to make our coding blogs. This is the perfect example of setting up a development environment, we are defining the Ruby version we shall use for this project as `2.7.x`. As of this writing the latest offered by the installed tool `rbenv` is `2.7.5`, so let's install that with `rbenv install 2.7.5`
+9. Because it's a long operation and we don't want to waste class time, we're going to install the [**Ruby**][ruby-lang] version we'll need to make our coding blogs. This is the perfect example of setting up a development environment, we are defining the Ruby version we shall use for this project as `2.7.x`. As of this writing the latest offered by the installed tool `rbenv` is `2.7.5`, so let's install that with `rbenv install 2.7.5`. Put simply, **Ruby** is the engine that allows **Jekyll** code (written in Ruby) to be executed on our development environment.
 
 {% highlight terminal %}
 coderbear@coderbear-VirtualBox:~$ rbenv install 2.7.5
@@ -73,7 +73,10 @@ Installed ruby-2.7.5 to /home/coderbear/.rbenv/versions/2.7.5
 coderbear@coderbear-VirtualBox:~$ 
 {% endhighlight %}
 
-And that's it! We've met our development environment and made it ours. **Ladles up--let's get coding.**
+{:start="10"}
+10. Create a [GitHub.com][github] account if you don't already have one. GitHub is an online repository that allows teams and friends to securely store code and the history of changes to code through the tool Git. Take note of the username you give your account, also known as your "Git Handle." It will be used when we're generating our own coding blogs during the initial lesson.
+
+And that's it! We've met our development environment, made it ours, and linked up to GitHub to start committing code. **Ladles up--let's get coding.**
 
 
 [ruby-lang]: https://www.ruby-lang.org/en/
