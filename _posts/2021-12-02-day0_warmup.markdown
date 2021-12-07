@@ -22,7 +22,7 @@ Our development environment is going to be an idential **VirtualBox virtual mach
 
 You can think of a virtual machine as an operating system within an operating system. As far as the virtual machine is concerned, it doesn't know its subordinate status, it thinks it's a regular computer. However, all of its "hardware" is **virtualized** e.g. made out of VirtualBox's software code interacting with your main OS's resources. Cool, huh?
 
-1. Download and install [VirtualBox from here][virtualbox-downloads]. It should be a pretty straightforward point-and-click install. You will need admin access on your machine to install everything you need.
+1. Download and install [VirtualBox from here][virtualbox-downloads]. It should be a pretty straightforward point-and-click install. You will need admin access on your machine to install everything you need. You may also need to boot into your computer's BIOS and enable virtualization, but this setting should ususally be enabled by default. If you run into Virtualbox installation issues, please contact me and we'll work through them.
 
 2. The Bear Dev Env VM is downloadable from [here][dbox-vm-link]. Be patient, it's a big download.
 
@@ -74,7 +74,7 @@ coderbear@coderbear-VirtualBox:~$
 {% endhighlight %}
 
 {:start="10"}
-10. Create a [GitHub.com][github] account if you don't already have one. GitHub is an online repository that allows teams and friends to securely store code and the history of changes to code through the tool Git. Take note of the username you give your account, also known as your "Git Handle." It will be used when we're generating our own coding blogs during the initial lesson.
+10. Create a [GitHub.com][github] account if you don't already have one. GitHub is an online repository that allows teams and friends to securely store code and the history of changes to code through the tool `git`. Take note of the username you give your account, also known as your "Git Handle." It will be used when we're generating our own coding blogs during the initial lesson.
 
 And that's it! We've met our development environment, made it ours, and linked up to GitHub to start committing code. **Ladles up--let's get coding.**
 
