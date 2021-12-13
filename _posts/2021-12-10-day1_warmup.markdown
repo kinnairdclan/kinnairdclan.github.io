@@ -8,7 +8,7 @@ Today's warmup will be cool--we're going to be making our Jekyll app live on the
 
 `git` is a tool, for a simple introduction, that allows you to back up your code and all revisions you make to it in a manner that allows you to access any revision in case you want to revert back. It's great for making sure you always have a back up of stable working code while you develop new, perhaps unstable features. I'll be spending all Day 1 discussing `git`--it's that essential of a tool.
 
-Last lesson we did three things related to `git`: One, we generated our SSH key pairs and uploaded the public key to our GitHub accounts. Two, we made our local `git` config understand the remote GitHub account with which we'd be interacting. Finally we named our Jekyll application after our GitHub username, which GitHub will then be able to use to know that it needs to expose the Jekyll app we push to the Internet. These were taken care of during our session because they are simply better to do interactively when dealing with a growing understanding of the Git paradigm.
+Last lesson we did three things related to `git`: One, we generated our SSH key pairs and uploaded the public key to our GitHub accounts. Two, we made our local `git` config understand the remote GitHub account with which we'd be interacting. Finally we named our Jekyll application after our GitHub username, which GitHub will then be able to use to know that it needs to expose the Jekyll app we push to the Internet. These were taken care of during our session because they are simply better to do interactively when dealing with a growing understanding of the Git paradigm. Moving on, let's define some central `git` concepts and run our first real `git` commands!
 
 The Git Repository
 ---
