@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "Day One: You Better Git!"
+date:   2021-12-10 20:05:00 -0700
+categories: jekyll update
+---
+Today's warmup will be cool--we're going to be making our Jekyll app live on the Internet with some introductory `git` commands.
+
+`git` is a tool, for a simple introduction, that allows you to back up your code and all revisions you make to it in a manner that allows you to access any revision in case you want to revert back. It's great for making sure you always have a back up of stable working code while you develop new, perhaps unstable features. I'll be spending all Day 1 discussing `git`--it's that essential of a tool.
+
+Last lesson we did three things related to `git`: One, we generated our SSH key pairs and uploaded the public key to our GitHub accounts. Two, we made our local `git` config understand the remote GitHub account with which we'd be interacting. Finally we named our Jekyll application after our GitHub username, which GitHub will then be able to use to know that it needs to expose the Jekyll app we push to the Internet. These were taken care of during our session because they are simply better to do interactively when dealing with a growing understanding of the Git paradigm.
+
+The Git Repository
+---
+
+Fundamental to the usage of `git` is the concept of the code repository or 'repo'. A code repository is simply a directory you define as what you want to contain all the code you want to include in your `git` source control and revisions for a particular project. We are going to be making our Jekyll application a `git` repository.
+
+Begin by `cd`'ing to the root directory of your Jekyll project and running `git init`.
+
+{% highlight terminal %}
+coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git init .
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint:   git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint:   git branch -m <name>
+{% endhighlight %}
+
+(Note: You can ignore the other commands `git` suggests here. People are starting to get uppity about the cultural insensitivity of the word 'master' in `git` and there is a push to rename the `master` branch the `main` branch--because, obviously, software is totally the same thing as black people.)
+
+You can see the status of the git repository with the command `git status`.
+
