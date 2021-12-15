@@ -4,16 +4,16 @@ title:  "Day One: You Better Git!"
 date:   2021-12-10 20:05:00 -0700
 categories: jekyll update
 ---
-Today's warmup will be cool--we're going to be making our Jekyll app live on the Internet with some introductory `git` commands.
+Today's warmup will be neat--we're going to be making our Jekyll app backed up on the Internet with some introductory `git` commands.
 
 `git` is a tool, for a simple introduction, that allows you to back up your code and all revisions you make to it in a manner that allows you to access any revision in case you want to revert back. It's great for making sure you always have a back up of stable working code while you develop new, perhaps unstable features. I'll be spending all Day 1 discussing `git`--it's that essential of a tool.
 
-Last lesson we did three things related to `git`: One, we generated our SSH key pairs and uploaded the public key to our GitHub accounts. Two, we made our local `git` config understand the remote GitHub account with which we'd be interacting. Finally we named our Jekyll application after our GitHub username, which GitHub will then be able to use to know that it needs to expose the Jekyll app we push to the Internet. These were taken care of during our session because they are simply better to do interactively when dealing with a growing understanding of the Git paradigm. Moving on, let's define some central `git` concepts and run our first real `git` commands!
+Last lesson we did three things related to `git`: One, we generated our SSH key pairs and uploaded the public key to our GitHub accounts. Two, we made our local `git` config understand the remote GitHub account with which we'd be interacting. Finally, we named our Jekyll application after our GitHub username, which GitHub will then be able to use to know that it needs to expose the Jekyll app we push to the Internet. These were taken care of during our session because they are simply better to do interactively when dealing with a growing understanding of the Git paradigm. Moving on, let's define some central `git` concepts and run our first real `git` commands!
 
-The Git Repository
+The Local Git Repository
 ---
 
-Fundamental to the usage of `git` is the concept of the code repository or 'repo'. A code repository is simply a directory you define as what you want to contain all the code you want to include in your `git` source control and revisions for a particular project. We are going to be making our Jekyll application a `git` repository.
+Fundamental to the usage of `git` is the concept of the code repository or 'repo'. A **code repository** is simply a directory you define as what will contain all the code you want to include in your `git` source control and revisions for a particular project. **Local repositories** exist on our local development machines, whereas **remote repositories** are stored in the 'cloud' so to speak, on a server accessible to our team members. We are going to be making our Jekyll application a local `git` repository before running a Git command to `push` the repository to GitHub where it will exist as a remote repository.
 
 Begin by `cd`'ing to the root directory of your Jekyll project and running `git init`.
 
@@ -33,5 +33,147 @@ hint:   git branch -m <name>
 
 (Note: You can ignore the other commands `git` suggests here. People are starting to get uppity about the cultural insensitivity of the word 'master' in `git` and there is a push to rename the `master` branch the `main` branch--because, obviously, software is totally the same thing as black people.)
 
-You can see the status of the git repository with the command `git status`.
+`git init` creates a special `.git` directory inside the root of this repository which allows the `git` command to store and access information about our **commits** to the local repo, or in layman's terms, the history of our code revisions.
 
+You can see the status of these commits to the local repository with the command `git status`.
+
+{% highlight terminal %}
+coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        404.html
+        Gemfile
+        Gemfile.lock
+        _config.yml
+        _posts/
+        about.markdown
+        index.markdown
+{% endhighlight %}
+
+We learn three things from this command:
+1. We are on the `master` branch. You can have multiple branches in a repository that ususally represent work-in-progress collections of experimental features. The `master` branch usually represents the last stable revision of code we've deployed to production or are readying for a release, not to be sullied with new code until it has been intensely tested and verified to work.
+
+2. We haven't made any commits to our local repository. We'll do so shortly.
+
+3. None of the files within our project are currently being tracked by the `git` repository. They exist in what's called the **working directory** of the project. Before they can be committed to the local repository, they must be added into an intermediate area called the **staging area**, where we'll organize features and revisions to be committed. These labels are mostly just semantics, the most important thing to understand here is that `git` doesn't track our files until we say so, but will display them for us in the `status` command anyway. 
+
+Let's make some commits to `master` because we know we have a solid working version of our Jekyll blog. We will add our files from the working directory to the staging area with the `git add` command. Let's start by adding just the Jekyll app's index page:
+
+{% highlight terminal %}
+coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git add index.markdown 
+coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.markdown
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        404.html
+        Gemfile
+        Gemfile.lock
+        _config.yml
+        _posts/
+        about.markdown
+{% endhighlight %}
+
+You can now see that only the index page is in the staging area, to be committed with a `git commit` command. The rest of the files remain in the working directory. By selectively choosing what you want to add to the staging area you can control how the history of revisions to your app is dictated. For example, did you make just a bunch of changes to a single page in your app? It's probably best to just `git add` that page only, and then `git commit` that page only with a **commit message** of what you've done to that page only.
+
+We have no such special commit to make so let's add everything in the working directory as well to our initial commit. You can do so by running another `git add` command with a wildcard or `*` operator which passes all eligible files in the directory to the `git` command.
+
+{% highlight terminal %}
+coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git add *
+The following paths are ignored by one of your .gitignore files:
+_site
+hint: Use -f if you really want to add them.
+hint: Turn this message off by running
+hint: "git config advice.addIgnoredFile false"
+coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   404.html
+        new file:   Gemfile
+        new file:   Gemfile.lock
+        new file:   _config.yml
+        new file:   _posts/2021-11-22-welcome-to-jekyll.markdown
+        new file:   about.markdown
+        new file:   index.markdown
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+{% endhighlight %}
+
+It's okay that the _site files don't get committed as our git-specific `.gitignore` file specifies that they should not. The `.gitignore` file is a handy tool for excluding certain files from our source control, such as the temporary HTML files created under the _site directory.
+
+The rest of our app is ready to be committed to `master`. Let's make our first commit. A commit is a unit of revision to code, described by a **commit message** of what the revision is or what it does. The message can be as succinct or as descriptive as you want to make it! In a personal project, where it's only you looking at your revisions, I find that you shouldn't agonize about what your commit message will contain. "Initial commit" will suffice here. You specify the commit message with the `-m` switch in `git commit`:
+
+{% highlight terminal %}
+
+coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git commit -m "Initial commit"
+[master (root-commit) b5e0591] Initial commit
+ 7 files changed, 244 insertions(+)
+ create mode 100644 404.html
+ create mode 100644 Gemfile
+ create mode 100644 Gemfile.lock
+ create mode 100644 _config.yml
+ create mode 100644 _posts/2021-11-22-welcome-to-jekyll.markdown
+ create mode 100644 about.markdown
+ create mode 100644 index.markdown
+coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+{% endhighlight %}
+
+Congrats! We've made our first commit and our first entry into our project's coding history. Our local repository now has this revision etched in stone, so to speak, so we can come back to this particular iteration of our code whenever we want. However, we don't yet have a remote repository to keep this history backed up. A remote repository must exist on GitHub before we can push our application to it.
+
+The Remote Git Repository
+---
+
+{:start="1"}
+1. Begin creating your remote repository by logging into [GitHub][github] and selecting that you want to make a new repository (see upper-right hand corner of the webpage and the "+" button):
+
+![make-remoterepo1](/assets/images/day1/day1_gitworkflow1.png){:class="img-responsive"}
+
+{:start="2"}
+2. Make the repository have the same name as your local directory, in my case *kinnairdclan.github.io*. Make sure the repository is public and create it:
+
+![make-remoterepo2](/assets/images/day1/day1_gitworkflow3.png){:class="img-responsive"}
+
+{:start="3"}
+3. Now that the repo is created, we can hook up our local repository to the remote and push our changes to the master branch.
+
+{% highlight terminal %}
+coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git remote add origin git@github.com:kinnairdclan/foothills_web_dev.git
+coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git push --set-upstream origin master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 4.27 KiB | 625.00 KiB/s, done.
+Total 10 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:kinnairdclan/foothills_web_dev.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+{% endhighlight %}
+
+Now you should be able to visit your repository from your GitHub homepage. Great! We'll be ready to work more with our Git repository during our lesson.
+
+[github]: https://github.com/
