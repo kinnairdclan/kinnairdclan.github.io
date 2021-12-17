@@ -158,10 +158,10 @@ The Remote Git Repository
 ![make-remoterepo2](/assets/images/day1/day1_gitworkflow3.png){:class="img-responsive"}
 
 {:start="3"}
-3. Now that the repo is created, we can hook up our local repository to the remote and push our changes to the master branch.
+3. Now that the repo is created, we can hook up our local repository to the remote and push our changes to the master branch. Look at the page you hit after creating the repository in GitHub and you will see a `git remote add` command. Run that in your local repo!
 
 {% highlight terminal %}
-coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git remote add origin git@github.com:kinnairdclan/foothills_web_dev.git
+coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git remote add origin git@github.com:kinnairdclan/kinnairdclan.github.io.git
 coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git push --set-upstream origin master
 Enumerating objects: 10, done.
 Counting objects: 100% (10/10), done.
