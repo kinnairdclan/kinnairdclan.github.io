@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Day Two: Better Than the Dirty Grabbler Can Do"
+date:   2021-12-17 00:05:00 -0700
+categories: jekyll update
+---
+Ever since the 2008 recession, lefty journalists were feeling ever-so-helpful in explaining that workers in 'outmoded' (read: targeted) industries could learn to code. With layoffs at many online publications like Huffpost and Buzzfeed in later years, these unemployed journalists' Twitter feeds were filled with brilliant albeit mocking suggestions that these journalists learn to code. The gammas couldn't handle it and complained so much Twitter began to consider the suggestion as grounds for a banning. Go figure.
+
+Well, here you are. You're learning to code. And with that you're already miles ahead of any Grabbler who purports to understand what you need or want to do to support yourself. And I'm glad to have you with me.
+
+Ruby in Twenty Minutes
+---
+For today's warmup read and complete the [Ruby in Twenty Minutes][ri20m] guide offered by [ruby-lang.org][ruby-lang]. It'll give you a great start on understanding the interaction of Ruby objects, methods, and classes that we'll go over in further detail in the coming classes.
+
+[ruby-lang]: https://ruby-lang.org
+[ri20m]: https://www.ruby-lang.org/en/documentation/quickstart/
