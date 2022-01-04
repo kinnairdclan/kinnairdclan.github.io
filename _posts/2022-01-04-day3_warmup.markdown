@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "Day Three: Getting Closer to Reality with Some Really Realer Ruby"
+date:   2022-01-04 00:05:00 -0700
+categories: jekyll update
+---
+
+Day 3's going to see us getting into some very useful programming skills, including:
+
+1. Working with **command line arguments** for our Ruby scripts, which are extra arguments we pass to our scripts from the CLI and are the usual paradigm of how arguments are passed to CLI programs. 
+2. We'll introduce ourselves to working with **text files**, which is a huge milestone for any good programmer, and
+3. We'll be writing our first **functions**, which are snippets of code behavior we write once and invoke elsewhere in our programs to avoid repeating ourselves. Real programs are structured with functions!
+
+For today's warmup read and complete the study drills of exercises 11-13 of [Learn Ruby the Hard Way][lrthw]. You can access the entirety of this book online for free. Alternatively you can support Shaw and buy his full PDF and videos.
+
+Shaw has you write scripts that you run as programs, which is a much better way to learn programming as compared to others I've seen. If you can, write your scripts in a directory structure like the following (next to your other warmups):
+
+```
+learnruby/
+|
+\_Exercise 1/
+| |
+| \_ex1.rb
+|
+\_(Exercises 2, 3, others you may have done)
+| |
+| \_(...)
+|
+\_Exercise 11/
+| |
+| \_ex11.rb
+|
+\_Exercise 12/
+| |
+| \_ex12.rb
+|
+\_Exercise 13/
+  |
+  \_ext13.rb
+```
+
+Source control your new collection of scripts by committing them to the remote repo of `learnruby`. As always please reach out in chat if you need `git` help.
+
+[lrthw]: https://learnrubythehardway.org/book/
