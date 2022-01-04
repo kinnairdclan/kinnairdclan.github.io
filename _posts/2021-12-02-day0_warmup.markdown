@@ -1,0 +1,85 @@
+---
+layout: post
+title:  "Day Zero: Crushing the Development Environment"
+date:   2021-12-02 18:30:50 -0700
+categories: jekyll update
+---
+Today we're going to warm up with some pretty routine but essential stuff, I'll admit that being a developer is very usually NOT like the Matrix or War Games or any other G---ler romanticizing of people interacting with computers. But things will get fun during the course, trust me. 
+
+Fundamental to a software developer's toolbelt is his **development environment**.
+
+The development environment is what guarantees that a developer's tooling and software dependencies are the same as the machine upon which his sofware will run in **Production** (a.k.a. when it's making money or helping people or running live on the Internet where anyone can see it.) It also guarantees that his friends who are also working on the software will encounter the same bugs to fix that he does, and that a minimum of new bugs will be introduced in the course of development. Bugs are flaws in code that gross out users--understandably.
+
+After we all get on the same page with the correct development environment, I hope to entice you for more by using a software called **Jekyll** to set up a coding project blog *just like this one*. With one final command from the command line you'll have your very own customizable blog accessible from the Internet.
+
+We'll work with professional developer tools such as **Git**, **SSH**, **[GitHub.com][github]** and more to carve out our very own coding portfolio. What better place to show your skills off to employers?
+
+Please follow the steps below to get ready for Day Zero's course:
+
+Download and Install VirtualBox and the development VM.
+---
+Our development environment is going to be an idential **VirtualBox virtual machine** that we share with each other. It is based of of Ubuntu Linux and is as red-bloodedly Linux as it comes. As time goes on, we'll learn why Linux is superior to Billy Goat Gates' Windows operating system (hint: we can modify and see everything on it and we know no one is watching what we do). I'll reiterate this in the course, but don't be intimidated if you're new to **GNU/Linux**. You'll get comfortable in this OS as we progress--maybe you are already!
+
+You can think of a virtual machine as an operating system within an operating system. As far as the virtual machine is concerned, it doesn't know its subordinate status, it thinks it's a regular computer. However, all of its "hardware" is **virtualized** e.g. made out of VirtualBox's software code interacting with your main OS's resources. Cool, huh?
+
+1. Download and install [VirtualBox from here][virtualbox-downloads]. It should be a pretty straightforward point-and-click install. You will need admin access on your machine to install everything you need. You may also need to boot into your computer's BIOS and enable virtualization, but this setting should ususally be enabled by default. If you run into Virtualbox installation issues, please contact me and we'll work through them.
+
+2. The Bear Dev Env VM is downloadable from [here][dbox-vm-link]. Be patient, it's a big download.
+
+3. Start up VirtualBox, and go to **File** > **Import Appliance**.
+
+![import-into-virtualbox1](/assets/images/day0/day0_vboximport0.png){:class="img-responsive"}
+
+{:start="4"}
+4. Import your VM (.ova file).
+
+![import-into-virtualbox1](/assets/images/day0/day0_vboximport1.png){:class="img-responsive"}
+
+{:start="5"}
+5. You should now have the VM loaded into VirtualBox. Hit the green **Start** arrow with it highlighted and it's off to the races.
+
+![import-into-virtualbox1](/assets/images/day0/day0_vboximport2.png){:class="img-responsive"}
+
+Log In!
+---
+
+{:start="6"}
+6. When you first fire up the VM, you should see a login prompt I'll show below. 
+* The login username is *coderbear*
+* The login password is *gravy*
+
+![import-into-virtualbox1](/assets/images/day0/day0_vboximport3.png){:class="img-responsive"}
+
+{:start="7"}
+7. You should finally get logged in and see your development desktop. 
+
+Meet the CLI
+---
+
+{:start="8"}
+8. You'll probably want to change the default password to something only you'll know. Let's get acquainted with the **command line interface** or **CLI**. Click the **Terminal** icon to the left to open a terminal, and then type in the command `passwd coderbear` to indicate that you want to change coderbear's password. Follow the prompts hitting enter each time.
+
+![import-into-virtualbox1](/assets/images/day0/day0_vboximport4.png){:class="img-responsive"}
+
+{:start="9"}
+9. Because it's a long operation and we don't want to waste class time, we're going to install the [**Ruby**][ruby-lang] version we'll need to make our coding blogs. This is the perfect example of setting up a development environment, we are defining the Ruby version we shall use for this project as `2.7.x`. As of this writing the latest offered by the installed tool `rbenv` is `2.7.5`, so let's install that with `rbenv install 2.7.5`. Put simply, **Ruby** is the engine that allows **Jekyll** code (written in Ruby) to be executed on our development environment.
+
+{% highlight terminal %}
+coderbear@coderbear-VirtualBox:~$ rbenv install 2.7.5
+Downloading ruby-2.7.5.tar.bz2...
+-> https://cache.ruby-lang.org/pub/ruby/2.7/ruby-2.7.5.tar.bz2
+Installing ruby-2.7.5...
+Installed ruby-2.7.5 to /home/coderbear/.rbenv/versions/2.7.5
+coderbear@coderbear-VirtualBox:~$ 
+{% endhighlight %}
+
+{:start="10"}
+10. Create a [GitHub.com][github] account if you don't already have one. GitHub is an online repository that allows teams and friends to securely store code and the history of changes to code through the tool `git`. Take note of the username you give your account, also known as your "Git Handle." It will be used when we're generating our own coding blogs during the initial lesson.
+
+And that's it! We've met our development environment, made it ours, and linked up to GitHub to start committing code. **Ladles up--let's get coding.**
+
+
+[ruby-lang]: https://www.ruby-lang.org/en/
+[github]: https://github.com/
+[dbox-vm-link]: https://www.dropbox.com/s/uqk5ysuoxsd68rk/Ubuntu%20Bear%20Dev%20Env.ova?dl=0
+[virtualbox-downloads]: https://www.virtualbox.org/wiki/Downloads
