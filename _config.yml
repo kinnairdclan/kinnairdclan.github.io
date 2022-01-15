@@ -16,11 +16,7 @@
 title: CoderBears Lesson Blog
 email: tartanbear2.0@bearapps.io
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi Bears and adjacents, here's where I'll post our coding lesson warm-ups 
-  and homework. A warm-up is a small assignment that should be completed 
-  before a course. They allow us to all get started on the same footing at lesson time. 
-  Homeworks are more involved and should be started earlier with time management in mind.
-  They are a more in-depth test of what we have learned as we progress through the course.
+  I'm teaching good moral people how to code. Sign up for courses under Courses. Take warm-ups--small assignments meant to be completed before class--or full-on Homework assignments under Warm-Ups and Homeworks. BTA: tartan_bear_2.0
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kinnairdclan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 domain: kinnairdclan.github.io
