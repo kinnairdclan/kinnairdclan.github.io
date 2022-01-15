@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Day Three: Getting Closer to Reality with Some Really Realer Ruby"
+title:  "Ruby 1-3: Getting Closer to Reality with Some Really Realer Ruby"
 date:   2022-01-04 00:05:00 -0700
 categories: jekyll update
 ---
