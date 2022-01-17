@@ -15,14 +15,19 @@ For this homework we want to take a load off our brains and have a script keep t
 
 In the script, the inventory file should be accessed in three different ways, expressed in the following **functions** you create:
 
-1. A `check_inventory` function that *opens* up your inventory file in `'r'` mode, *reads* the number, and *returns* the the quanity it finds within to the main program as an integer before *closing* the inventory file. Have this function include a following snippet able to catch and return `0` as the quantity found if no file exists:
+1. A `check_inventory` function that *opens* up your inventory file in `'r'` mode, *reads* the number into a variable, and *closes* the inventory file before *returning* the the quanity it found within to the main program as the integer variable. At the top of this function, have it include the following snippet able to catch and return `0` as the quantity found if no file exists:
 
-```
+{% highlight ruby %}
+def check_inventory(text_file_name)
 if !File.exist?(text_file_name)
   return 0
 end
-```
-Note: `text_file_name` above should probably be passed into this function as an **argument**.
+#
+# your code here below
+#
+end
+{% endhighlight %}
+Note: As I've done above, `text_file_name` found via `ARGV` should probably be passed into this function as an **argument**.
 
 2. An `add_to_inventory` function that *opens* up our inventory file in `'w'` mode, and modifies the quantity by however much of the item you have added to the inventory using `.to_i` and addition. It then writes the new quantity and closes the file. This function should also not care if the file exists or not, it will create it if it does not exist (because it opens the inventory file in `'w'` mode).
 
@@ -32,7 +37,7 @@ Note: `text_file_name` above should probably be passed into this function as an 
   - Uses `check_inventory` alongside a `puts` statement to tell you how much you have in stock.
   - Asks you how much you added to your stores via `puts`, gets an answer using `$stdin.gets.chomp`, and calls `add_to_inventory` to modify your inventory.
   - Asks you how much you removed from your stores via `puts`, gets an answer using `$stdin.gets.chomp`, and calls `remove_from_inventory` to modify your inventory.
-  - Makes a final call to `check inventory` alongside a `puts` statement to tell you your updated amount in stock.
+  - Makes a final call to `check_inventory` alongside a `puts` statement to tell you your updated amount in stock.
 
 The final product should execute at least somewhat like the below:
 
@@ -56,5 +61,6 @@ Hints
 
 **Hint:** I also wouldn't worry about denominations of your goods in the text file but rather have the `puts` statements consistently output the same denomination e.g. "gallons" or "pounds" or "liters" etc..
 
-Source control your new script and whatever files it needs around by committing them to the remote repo of `learnruby` under a new 'Homework 4' folder. As always please reach out in chat if you need `git` help, or any help with this homework. 
+Once you have a working program, make a Jekyll post out of your completed homework using [instructions already posted][instructions]. If you can't finish in time post up what you've completed, *and good try!* Coding is trial and error and failure oftentimes, and that is totally OK--it's how we learn.
 
+[instructions]: {{ site.baseurl }}{% link _posts/2021-12-17-day2_warmup.markdown %} 
