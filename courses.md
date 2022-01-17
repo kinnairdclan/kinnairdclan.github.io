@@ -124,12 +124,12 @@ select{
 <h4>Courses Winter 2022 (Will be updated with more courses)</h4>
 
 |**Date**|**Module-Course#**|**Calendar Event Link**|**Price**|
-|02/01/2022 6:00PM MT|Ruby 1-0 A|[Tuesday Bears Learn Ruby Day 0][2-1-22]|Free|
-|02/03/2022 6:00PM MT|Ruby 1-0 B|[Thursday Bears Learn Ruby Day 0][2-3-22]|Free|
-|02/05/2022 11:30AM MT|Ruby 1-0 C|[Saturday Bears Learn Ruby Day 0][2-5-22]|Free|
-|02/08/2022 6:00PM MT|Ruby 1-1 A|[Tuesday Bears Learn Ruby Day 1][2-8-22]|$20|
-|02/10/2022 6:00PM MT|Ruby 1-1 B|[Thursday Bears Learn Ruby Day 1][2-10-22]|$20|
-|02/12/2022 11:30AM MT|Ruby 1-1 C|[Saturday Bears Learn Ruby Day 1][2-12-22]|$20|
+|02/01/2022 6:00-7:30PM MT|Ruby 1-0 A|[Tuesday Bears Learn Ruby Day 0][2-1-22]|Free|
+|02/03/2022 6:00-7:30PM MT|Ruby 1-0 B|[Thursday Bears Learn Ruby Day 0][2-3-22]|Free|
+|02/05/2022 11:30AM-1:00PM MT|Ruby 1-0 C|[Saturday Bears Learn Ruby Day 0][2-5-22]|Free|
+|02/08/2022 6:00-7:30PM MT|Ruby 1-1 A|[Tuesday Bears Learn Ruby Day 1][2-8-22]|$20|
+|02/10/2022 6:00-7:30PM MT|Ruby 1-1 B|[Thursday Bears Learn Ruby Day 1][2-10-22]|$20|
+|02/12/2022 11:30AM-1:00PM MT|Ruby 1-1 C|[Saturday Bears Learn Ruby Day 1][2-12-22]|$20|
 
 [2-1-22]: https://calendar.google.com/event?action=TEMPLATE&tmeid=MjRwM21ocDRhaXFiOTBxaGpvZHI2dDZsZXUgMG0yN29qZm45YXAzMTBiZmYwNmYycWptNW9AZw&tmsrc=0m27ojfn9ap310bff06f2qjm5o%40group.calendar.google.com
 [2-3-22]: https://calendar.google.com/event?action=TEMPLATE&tmeid=MzJtOGNpbWRocW84aGZ0cmhidnJxZXJ0YnQgMG0yN29qZm45YXAzMTBiZmYwNmYycWptNW9AZw&tmsrc=0m27ojfn9ap310bff06f2qjm5o%40group.calendar.google.com
