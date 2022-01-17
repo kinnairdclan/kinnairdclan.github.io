@@ -18,7 +18,7 @@ Please follow the steps below to get ready for Day Zero's course:
 
 Download and Install VirtualBox and the development VM.
 ---
-Our development environment is going to be an idential **VirtualBox virtual machine** that we share with each other. It is based of of Ubuntu Linux and is as red-bloodedly Linux as it comes. As time goes on, we'll learn why Linux is superior to Billy Goat Gates' Windows operating system (hint: we can modify and see everything on it and we know no one is watching what we do). I'll reiterate this in the course, but don't be intimidated if you're new to **GNU/Linux**. You'll get comfortable in this OS as we progress--maybe you are already!
+Our development environment is going to be an identical **VirtualBox virtual machine** that we share with each other. It is based of of Ubuntu Linux and is as red-bloodedly Linux as it comes. As time goes on, we'll learn why Linux is superior to Billy Goat Gates' Windows operating system (hint: we can modify and see everything on it and we know no one is watching what we do). I'll reiterate this in the course, but don't be intimidated if you're new to **GNU/Linux**. You'll get comfortable in this OS as we progress--maybe you are already!
 
 You can think of a virtual machine as an operating system within an operating system. As far as the virtual machine is concerned, it doesn't know its subordinate status, it thinks it's a regular computer. However, all of its "hardware" is **virtualized** e.g. made out of VirtualBox's software code interacting with your main OS's resources. Cool, huh?
 
