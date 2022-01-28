@@ -15,30 +15,25 @@ For today's warmup read and complete the study drills of exercises 11-13 of [Lea
 
 Shaw has you write scripts that you run as programs, which is a much better way to learn programming as compared to others I've seen. If you can, write your scripts in a directory structure like the following (next to your other warmups):
 
+Source control these three scripts as new Jekyll posts as we did in the [last warmup][last-warmup]. Your blog `_posts` directory should start looking like:
+
 ```
-learnruby/
+mygithubusername.github.io/
 |
-\_Exercise 1/
-| |
-| \_ex1.rb
-|
-\_(Exercises 2, 3, others you may have done)
-| |
-| \_(...)
-|
-\_Exercise 11/
-| |
-| \_ex11.rb
-|
-\_Exercise 12/
-| |
-| \_ex12.rb
-|
-\_Exercise 13/
+\'_posts'/
   |
-  \_ext13.rb
+  \_2021-12-17-exercise1.markdown
+  |
+  \_2021-12-17-exercise2.markdown
+  |
+  \_2021-12-17-exercise3.markdown
+  |
+  \_2021-01-04-exercise11.markdown
+  |
+  \_2021-01-04-exercise12.markdown
+  |
+  \_2021-01-04-exercise13.markdown
 ```
 
-Source control your new collection of scripts by committing them to the remote repo of `learnruby`. As always please reach out in chat if you need `git` help.
-
+[last-warmup]: {{ site.baseurl }}{% link _posts/2021-12-17-day2_warmup.markdown %} 
 [lrthw]: https://learnrubythehardway.org/book/
