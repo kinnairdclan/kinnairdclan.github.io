@@ -7,9 +7,9 @@ permalink: /courses/
 How Do I Sign Up for Courses? 
 ---
 
-Look at the list of courses at the bottom of this page and schedule your lesson by filling out the below form. Then, if the course has a price attached, hit up the [My Venmo][my-venmo] page to make a payment. 
+Look at the list of courses at the bottom of this page and schedule your lesson by filling out the below form. Then, if the course has a price attached, hit up the [My Venmo][my-venmo] page to make a payment. I'm flexible on payment quantities if you can't pay the full amount!
 
-On the day before your scheduled course I will email all students that have signed up (and paid) the link to the Zoom meeting we will use. And that's it--simple! I highly recommend you complete all courses of a module instead of missing, as they build off one another incrementally. 
+On the day before your scheduled course I will email all students that have signed up the link to the Zoom meeting we will use. And that's it--simple! I highly recommend you complete all courses of a module instead of missing, as they build off one another incrementally. 
 
 Note this schedule is subject to additions and retractions due to student requests and I will do my best to keep it updated.
 

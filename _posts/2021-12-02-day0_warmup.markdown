@@ -81,5 +81,5 @@ And that's it! We've met our development environment, made it ours, and linked u
 
 [ruby-lang]: https://www.ruby-lang.org/en/
 [github]: https://github.com/
-[dbox-vm-link]: https://www.dropbox.com/s/uqk5ysuoxsd68rk/Ubuntu%20Bear%20Dev%20Env.ova?dl=0
+[dbox-vm-link]: https://www.dropbox.com/s/tzpvkk7fyfs08aa/Ubuntu%20Bear%20Dev%20Env.ova?dl=0
 [virtualbox-downloads]: https://www.virtualbox.org/wiki/Downloads
