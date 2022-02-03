@@ -7,9 +7,8 @@ published: false
 ---
 Today's warmup will be neat--we're going to be making our Jekyll app backed up on the Internet with some introductory `git` commands.
 
-`git` is a tool, for a simple introduction, that allows you to back up your code and all revisions you make to it in a manner that allows you to access any revision in case you want to revert back. It's great for making sure you always have a back up of stable working code while you develop new, perhaps unstable features. I'll be spending all Day 1 discussing `git`--it's that essential of a tool.
+`git` is a tool that allows you to back up your code and all revisions you make to it in a manner that allows you to access any revision in case you want to revert back. It's great for making sure you always have a back up of stable working code while you develop new, perhaps unstable features. I'll be spending all Day 1 discussing `git`--it's that essential of a tool. So let's learn some basic `git` commands.
 
-Last lesson we did three things related to `git`: One, we generated our SSH key pairs and uploaded the public key to our GitHub accounts. Two, we made our local `git` config understand the remote GitHub account with which we'd be interacting. Finally, we named our Jekyll application after our GitHub username, which GitHub will then be able to use to know that it needs to expose the Jekyll app we push to the Internet. These were taken care of during our session because they are simply better to do interactively when dealing with a growing understanding of the Git paradigm. Moving on, let's define some central `git` concepts and run our first real `git` commands!
 
 The Local Git Repository
 ---
@@ -19,7 +18,7 @@ Fundamental to the usage of `git` is the concept of the code repository or 'repo
 Begin by `cd`'ing to the root directory of your Jekyll project and running `git init`.
 
 {% highlight terminal %}
-coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git init .
+coderbear@coderbear-VirtualBox:~/github/kinnairdclan.github.io$ git init .
 hint: Using 'master' as the name for the initial branch. This default branch name
 hint: is subject to change. To configure the initial branch name to use in all
 hint: of your new repositories, which will suppress this warning, call:
@@ -39,7 +38,7 @@ hint:   git branch -m <name>
 You can see the status of these commits to the local repository with the command `git status`.
 
 {% highlight terminal %}
-coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git status
+coderbear@coderbear-VirtualBox:~/github/kinnairdclan.github.io$ git status
 On branch master
 
 No commits yet
@@ -66,8 +65,8 @@ We learn three things from this command:
 Let's make some commits to `master` because we know we have a solid working version of our Jekyll blog. We will add our files from the working directory to the staging area with the `git add` command. Let's start by adding just the Jekyll app's index page:
 
 {% highlight terminal %}
-coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git add index.markdown 
-coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git status
+coderbear@coderbear-VirtualBox:~/github/kinnairdclan.github.io$ git add index.markdown 
+coderbear@coderbear-VirtualBox:~/github/kinnairdclan.github.io$ git status
 On branch master
 
 No commits yet
@@ -92,13 +91,13 @@ You can now see that only the index page is in the staging area, to be committed
 We have no such special commit to make so let's add everything in the working directory as well to our initial commit. You can do so by running another `git add` command with a wildcard or `*` operator which passes all eligible files in the directory to the `git` command.
 
 {% highlight terminal %}
-coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git add *
+coderbear@coderbear-VirtualBox:~/github/kinnairdclan.github.io$ git add *
 The following paths are ignored by one of your .gitignore files:
 _site
 hint: Use -f if you really want to add them.
 hint: Turn this message off by running
 hint: "git config advice.addIgnoredFile false"
-coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git status
+coderbear@coderbear-VirtualBox:~/github/kinnairdclan.github.io$ git status
 On branch master
 
 No commits yet
@@ -124,7 +123,7 @@ The rest of our app is ready to be committed to `master`. Let's make our first c
 
 {% highlight terminal %}
 
-coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git commit -m "Initial commit"
+coderbear@coderbear-VirtualBox:~/github/kinnairdclan.github.io$ git commit -m "Initial commit"
 [master (root-commit) b5e0591] Initial commit
  7 files changed, 244 insertions(+)
  create mode 100644 404.html
@@ -134,7 +133,7 @@ coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git commit -m "Init
  create mode 100644 _posts/2021-11-22-welcome-to-jekyll.markdown
  create mode 100644 about.markdown
  create mode 100644 index.markdown
-coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git status
+coderbear@coderbear-VirtualBox:~/github/kinnairdclan.github.io$ git status
 On branch master
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
@@ -154,27 +153,10 @@ The Remote Git Repository
 ![make-remoterepo1](/assets/images/day1/day1_gitworkflow1.png){:class="img-responsive"}
 
 {:start="2"}
-2. Make the repository have the same name as your local directory, in my case *kinnairdclan.github.io*. Make sure the repository is public and create it:
+2. Make the repository have the same name as your local directory, in my case *kinnairdclan.github.io*. Make sure the repository is public and create it by clicking "Create repository":
 
 ![make-remoterepo2](/assets/images/day1/day1_gitworkflow3.png){:class="img-responsive"}
 
-{:start="3"}
-3. Now that the repo is created, we can hook up our local repository to the remote and push our changes to the master branch. Look at the page you hit after creating the repository in GitHub and you will see a `git remote add` command. Run that in your local repo!
-
-{% highlight terminal %}
-coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git remote add origin git@github.com:kinnairdclan/kinnairdclan.github.io.git
-coderbear@coderbear-VirtualBox:~/src/kinnairdclan.github.io$ git push --set-upstream origin master
-Enumerating objects: 10, done.
-Counting objects: 100% (10/10), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (10/10), done.
-Writing objects: 100% (10/10), 4.27 KiB | 625.00 KiB/s, done.
-Total 10 (delta 0), reused 0 (delta 0), pack-reused 0
-To github.com:kinnairdclan/kinnairdclan.github.io.git
- * [new branch]      master -> master
-Branch 'master' set up to track remote branch 'master' from 'origin'.
-{% endhighlight %}
-
-Now you should be able to visit your repository from your GitHub homepage. Great! We'll be ready to work more with our Git repository during our lesson.
+Now that the repo is created, in class we'll be able to hook up our local repository to the remote and push our changes to the remote. Nice work!
 
 [github]: https://github.com/
