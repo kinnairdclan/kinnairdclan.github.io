@@ -9,9 +9,9 @@ How Do I Sign Up for Courses?
 
 Look at the list of courses at the bottom of this page and schedule your lesson series by filling out the below form with one of the "Ruby 1-0" courses. 
 
-After we have our first lesson, you no longer need to do anyting regarding signing up. I will assume you wish to attend the later courses on the same day you attended your first and will continuously keep you in the mailing list and send you course invites the day before later courses. For example, if you signed up for "Ruby 1-0 A," I will send you the invite only for "A" classes that occur on later Tuesdays. **Please message me with any questions. If you wish to change the date you want to attend please email me or message me over Mattermost, or else I will not know to send you the invite.** 
+After we have our first lesson, you no longer need to do anything regarding signing up. I will assume you wish to attend the later courses on the same day you attended your first and will continuously keep you in the mailing list and send you course invites the day before later courses. For example, if you signed up for "Ruby 1-0 A," I will send you the invite only for "A" classes that occur on later Tuesdays. **Please message me with any questions. If you wish to change the date you want to attend please email me or message me over Mattermost, or else I will not know to send you the invite.** 
 
-On the day before your scheduled course I will email all students that are attached the link to the Zoom meeting we will use. And that's it--simple! I highly recommend you complete all courses of a module instead of missing, as they build off one another incrementally. 
+On the day before your scheduled course I will email all students that are attending the course for that day the link to the Zoom meeting we will use. And that's it--simple! I highly recommend you complete all courses of a module instead of missing, as they build off one another incrementally. 
 
 After a course, if the next course has a price attached, hit up the [My Venmo][my-venmo] page to pay for it. I'm flexible on payment quantities if you can't pay the full amount!
 
