@@ -8,6 +8,19 @@ Today's warmup will be neat--we're going to be making our Jekyll app backed up o
 
 `git` is a tool that allows you to back up your code and all revisions you make to it in a manner that allows you to access any revision in case you want to revert back. It's great for making sure you always have a back up of stable working code while you develop new, perhaps unstable features. I'll be spending all Day 1 discussing `git`--it's that essential of a tool. So let's learn some basic `git` commands.
 
+Signing Into Git
+---
+
+Before we work in our repository let's make sure `git` understand *us*, that is who will be making the code changes and creating a coding history.
+
+Run the following commands so that `git` authors your changes as actually yours:
+
+{% highlight terminal %}
+coderbear@coderbear-VirtualBox:~$ git config --global user.name "kinnairdclan"
+coderbear@coderbear-VirtualBox:~$ git config --global user.email "jason.kinnard@pm.me"
+{% endhighlight %}
+
+Note that `user.name` should be your GitHub handle name (the same word as the first word in your Jekyll app directory we made before adding `.github.io` to it) and your `user.email` should be the email address you used when signing up for GitHub.
 
 The Local Git Repository
 ---
@@ -140,6 +153,8 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 {% endhighlight %}
+
+**NOTE**: If you encounter errors after running your first `git commit` command, please reference the **Signing Into Git** step above and re-sign in. This was a step I only recently realized had to be done before making any local commits. Sorry about that! 
 
 Congrats! We've made our first commit and our first entry into our project's coding history. Our local repository now has this revision etched in stone, so to speak, so we can come back to this particular iteration of our code whenever we want. However, we don't yet have a remote repository to keep this history backed up. A remote repository must exist on GitHub before we can push our application to it.
 

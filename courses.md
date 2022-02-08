@@ -9,7 +9,7 @@ How Do I Sign Up for Courses?
 
 Look at the list of courses at the bottom of this page and schedule your lesson series by filling out the below form with one of the "Ruby 1-0" courses. 
 
-After we have our first lesson, you no longer need to do anything regarding signing up. I will assume you wish to attend the later courses on the same day you attended your first and will continuously keep you in the mailing list and send you course invites the day before later courses. For example, if you signed up for "Ruby 1-0 A," I will send you the invite only for "A" classes that occur on later Tuesdays. **Please message me with any questions. If you wish to change the date you want to attend please email me or message me over Mattermost, or else I will not know to send you the invite.** 
+After we have our first lesson, *you no longer need to do anything regarding signing up.* I will assume you wish to attend the later courses on the same day and time you attended your first and will keep you in the mailing list and send you course invites. For example, if you signed up for "Ruby 1-0 A," I will send you the invite only for "A" classes that occur on later Tuesdays. **If you wish to change the date you want to attend please email me or message me over Mattermost, or else I will not know to send you the invite.** 
 
 On the day before your scheduled course I will email all students that are attending the course for that day the link to the Zoom meeting we will use. And that's it--simple! I highly recommend you complete all courses of a module instead of missing, as they build off one another incrementally. 
 
@@ -127,17 +127,28 @@ select{
 
 |**Date**|**Module-Course#**|**Calendar Event Link**|**Price**|**Rec. ages**|
 |02/01/2022 6:00-7:30PM MT|Ruby 1-0 A|[Tuesday Bears Learn Ruby Day 0][2-1-22]|Free|14+|
-|02/03/2022 6:00-7:30PM MT|Ruby 1-0 B|[Thursday Bears Learn Ruby Day 0][2-3-22]|Free|14+|
 |02/05/2022 11:30AM-1:00PM MT|Ruby 1-0 C|[Saturday Bears Learn Ruby Day 0][2-5-22]|Free|14+|
 |02/08/2022 6:00-7:30PM MT|Ruby 1-1 A|[Tuesday Bears Learn Ruby Day 1][2-8-22]|$20|14+|
-|02/10/2022 6:00-7:30PM MT|Ruby 1-1 B|[Thursday Bears Learn Ruby Day 1][2-10-22]|$20|14+|
-|02/12/2022 11:30AM-1:00PM MT|Ruby 1-1 C|[Saturday Bears Learn Ruby Day 1][2-12-22]|$20|14+|
+|02/12/2022 11:30AM-1:00PM MT|Ruby 1-1 C|[Saturday Bears Learn Ruby Day 1][2-12-22a]|$20|14+|
+|02/12/2022 1:30PM-3:00PM MT|Ruby 1-0 D|[Saturday Bears Learn Ruby Day 0 (Delta Class)][2-12-22b]|Free|14+|
+|02/15/2022 6:00-7:30PM MT|Ruby 1-2 A|[Tuesday Bears Learn Ruby Day 2][2-15-22]|$20|14+|
+|02/19/2022 11:30AM-1:00PM MT|Ruby 1-2 C|[Saturday Bears Learn Ruby Day 2][2-19-22]|$20|14+|
+|02/22/2022 6:00-7:30PM MT|Ruby 1-3 A|[Tuesday Bears Learn Ruby Day 3][2-22-22]|$20|14+|
+|02/26/2022 11:30AM-1:00PM MT|Ruby 1-3 C|[Saturday Bears Learn Ruby Day 3][2-26-22]|$20|14+|
+|03/01/2022 6:00-7:30PM MT|Ruby 1-4 A|[Tuesday Bears Learn Ruby Day 4][3-01-22]|$20|14+|
+|03/05/2022 11:30AM-1:00PM MT|Ruby 1-4 C|[Saturday Bears Learn Ruby Day 4][3-05-22]|$20|14+|
 
 [2-1-22]: https://calendar.google.com/event?action=TEMPLATE&tmeid=MjRwM21ocDRhaXFiOTBxaGpvZHI2dDZsZXUgMG0yN29qZm45YXAzMTBiZmYwNmYycWptNW9AZw&tmsrc=0m27ojfn9ap310bff06f2qjm5o%40group.calendar.google.com
-[2-3-22]: https://calendar.google.com/event?action=TEMPLATE&tmeid=MzJtOGNpbWRocW84aGZ0cmhidnJxZXJ0YnQgMG0yN29qZm45YXAzMTBiZmYwNmYycWptNW9AZw&tmsrc=0m27ojfn9ap310bff06f2qjm5o%40group.calendar.google.com
 [2-5-22]: https://calendar.google.com/event?action=TEMPLATE&tmeid=M3MwcmJqdHZyNGFqb3RrbHVmbGNwMHJkaDUgMG0yN29qZm45YXAzMTBiZmYwNmYycWptNW9AZw&tmsrc=0m27ojfn9ap310bff06f2qjm5o%40group.calendar.google.com
 [2-8-22]: https://calendar.google.com/event?action=TEMPLATE&tmeid=NjMwMzlham9qdTBhNDRjanIwMWdsM2Zyb2wgMG0yN29qZm45YXAzMTBiZmYwNmYycWptNW9AZw&tmsrc=0m27ojfn9ap310bff06f2qjm5o%40group.calendar.google.com
 [2-10-22]: https://calendar.google.com/event?action=TEMPLATE&tmeid=MHNkYnJzanRvMTZlYTBoYzNpZTBqN3E1dTQgMG0yN29qZm45YXAzMTBiZmYwNmYycWptNW9AZw&tmsrc=0m27ojfn9ap310bff06f2qjm5o%40group.calendar.google.com
-[2-12-22]: https://calendar.google.com/event?action=TEMPLATE&tmeid=MHFxaTBka3QyYTRwN2dpMzhpYTVqOGcxZGQgMG0yN29qZm45YXAzMTBiZmYwNmYycWptNW9AZw&tmsrc=0m27ojfn9ap310bff06f2qjm5o%40group.calendar.google.com
+[2-12-22a]: https://calendar.google.com/event?action=TEMPLATE&tmeid=MHFxaTBka3QyYTRwN2dpMzhpYTVqOGcxZGQgMG0yN29qZm45YXAzMTBiZmYwNmYycWptNW9AZw&tmsrc=0m27ojfn9ap310bff06f2qjm5o%40group.calendar.google.com
+[2-12-22b]: https://calendar.google.com/event?action=TEMPLATE&tmeid=NWw3MGFmbHRzNzdsZDgzcWcxbGQ0MTA3cTAgMG0yN29qZm45YXAzMTBiZmYwNmYycWptNW9AZw&tmsrc=0m27ojfn9ap310bff06f2qjm5o%40group.calendar.google.com
+[2-15-22]: https://calendar.google.com/event?action=TEMPLATE&tmeid=MDJzbWdjOGQyM3RmYjNhOHZ2ZnVkZjhqOGogMG0yN29qZm45YXAzMTBiZmYwNmYycWptNW9AZw&tmsrc=0m27ojfn9ap310bff06f2qjm5o%40group.calendar.google.com
+[2-19-22]: https://calendar.google.com/event?action=TEMPLATE&tmeid=MnV1NWs0N2hpM2Nla3RnbDcyOTdhbnJlbWkgMG0yN29qZm45YXAzMTBiZmYwNmYycWptNW9AZw&tmsrc=0m27ojfn9ap310bff06f2qjm5o%40group.calendar.google.com
+[2-22-22]: https://calendar.google.com/event?action=TEMPLATE&tmeid=MGQydDVpNHFrYmhxa29uOThsYTZ1c252MjkgMG0yN29qZm45YXAzMTBiZmYwNmYycWptNW9AZw&tmsrc=0m27ojfn9ap310bff06f2qjm5o%40group.calendar.google.com
+[2-26-22]: https://calendar.google.com/event?action=TEMPLATE&tmeid=NnE3bXVhaDA0bzg4bWMzYmk3MnNpajQxa3IgMG0yN29qZm45YXAzMTBiZmYwNmYycWptNW9AZw&tmsrc=0m27ojfn9ap310bff06f2qjm5o%40group.calendar.google.com
+[3-01-22]: https://calendar.google.com/event?action=TEMPLATE&tmeid=M2Q3cm9uZTNrMWZvZTQwaGE0Z2E3NHJucmEgMG0yN29qZm45YXAzMTBiZmYwNmYycWptNW9AZw&tmsrc=0m27ojfn9ap310bff06f2qjm5o%40group.calendar.google.com
+[3-05-22]: https://calendar.google.com/event?action=TEMPLATE&tmeid=M2ZpM25jNmFmNTgzZWhzcWU0bXU5NzZyc3MgMG0yN29qZm45YXAzMTBiZmYwNmYycWptNW9AZw&tmsrc=0m27ojfn9ap310bff06f2qjm5o%40group.calendar.google.com
 
 [my-venmo]: {{ site.baseurl }}{% link venmo_qr.md %}
