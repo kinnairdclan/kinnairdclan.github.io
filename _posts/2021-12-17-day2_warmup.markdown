@@ -14,13 +14,18 @@ Our section on learning Ruby is going to draw a lot from Zed Shaw's [Learn Ruby 
 
 For today's warmup read and complete the study drills of exercises 1-3 of [Learn Ruby the Hard Way][lrthw]. You can access the entirety of this book online for free. Alternatively you can support Shaw and buy his full PDF and videos. We're skipping Exercise 0 because our development environment work is already taken care of. 
 
-Shaw has you write scripts that you run as programs, which is a much better way to learn programming as compared to others I've seen. If you can, after you've written your scripts format them as a Jekyll post for your coding blog. To do this, make sure you make a new file that looks like:
+Shaw has you write scripts that you run as programs, which is a much better way to learn programming as compared to others I've seen. I recommend you write your scripts with the command `gedit`, such as running `gedit ex1.rb` for the first exercise. The text editor then opens up and you can type into it normally, save normally, and exit normally. You then run the scripts you make by running `ruby ex1.rb`. 
+
+The Extra Mile (Optional)
+---
+
+This next portion is optional. If you can, after you've written your scripts copy them to a new file using `cp` and format the new file as a Jekyll post for your coding blog. To do this, make your new file look like:
 
 {% highlight md %}
 ---
 layout: post
 title:  "Learn Ruby the Hard Way Exercise 1"
-date:   2021-12-17 00:05:00 -0700
+date:   2021-12-17 00:05:00 -0700 #This can be today's date, it doesn't really matter what day/time you give it.
 categories: jekyll update
 ---
 ```
@@ -34,7 +39,7 @@ puts 'I "said" do not touch this.'
 ```
 {% endhighlight %}
 
-Once you have this file written out place it in your Jekyll repository in the following format:
+Once you have this file written out place it (using `cp` or `mv`) in your Jekyll repository in the following format:
 
 ```
 mygithubusername.github.io/
@@ -48,6 +53,6 @@ mygithubusername.github.io/
 
 You can then test out your new pages by running `jekyll serve` in the root directory of your Jekyll blog repo. The new exercise posts should propagate as new links in your main page, and the links should take you to your completed scripts in all their glory! Note these script pages will not be runnable as Ruby any more but viewable in your blogs--markdown is not the same thing as Ruby.
 
-Source control your new `_posts` with `git add`, `git commit` commands and `git push` them to your `gh-pages` remote branch. Let's get these live on the 'Net! A lot just happened, it's OK if you get stuck. Reach out to me if you are, and we can work through `git` issues. Alternatively wait for the beginning of class and we can work through this warm up together. Happy blogging and see you next class!
+Source control your new `_posts` with `git add`, `git commit` commands. A lot just happened, it's OK if you get stuck. Reach out to me if you are, and we can work through `git` issues. Alternatively wait for the beginning of class and we can work through this warm up together. Happy blogging and see you next class!
 
 [lrthw]: https://learnrubythehardway.org/book/
