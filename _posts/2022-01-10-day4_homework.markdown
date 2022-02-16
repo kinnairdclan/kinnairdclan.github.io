@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ruby 1-4: Homework 1"
+title:  "Ruby 1-5: Homework 1"
 date:   2022-01-10 00:05:00 -0700
 categories: jekyll update
 ---

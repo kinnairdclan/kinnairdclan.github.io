@@ -5,17 +5,18 @@ date:   2022-01-04 00:05:00 -0700
 categories: jekyll update
 ---
 
-Day 3's going to see us getting into some very useful programming skills, including:
+Day 3's going to see us getting into some very useful programming skills, we'll be:
 
 1. Working with **command line arguments** for our Ruby scripts, which are extra arguments we pass to our scripts from the CLI and are the usual paradigm of how arguments are passed to CLI programs. 
 2. We'll introduce ourselves to working with **text files**, which is a huge milestone for any good programmer, and
-3. We'll be writing our first **functions**, which are snippets of code behavior we write once and invoke elsewhere in our programs to avoid repeating ourselves. Real programs are structured with functions!
+3. We'll be looking at our first Ruby object **methods**, which are snippets of code behavior that are written once (hidden from us, but that's OK) and invoked multiple times in our programs to avoid repeating ourselves. With object methods we save ourselves time and headache!
 
-For today's warmup read and complete the study drills of exercises 11-13 of [Learn Ruby the Hard Way][lrthw]. You can access the entirety of this book online for free. Alternatively you can support Shaw and buy his full PDF and videos.
+For today's warmup read and complete the study drills of **exercises 11-13** of [Learn Ruby the Hard Way][lrthw]. You can access the entirety of this book online for free. Alternatively you can support Shaw and buy his full PDF and videos.
 
-Shaw has you write scripts that you run as programs, which is a much better way to learn programming as compared to others I've seen. If you can, write your scripts in a directory structure like the following (next to your other warmups):
+The Extra Mile (Optional)
+---
 
-Source control these three scripts as new Jekyll posts as we did in the [last warmup][last-warmup]. Your blog `_posts` directory should start looking like:
+Make these three scripts into new Jekyll posts as was an option in the in the [last warmup][last-warmup] (follow instructions on how to do this there). Your blog `_posts` directory should start looking like:
 
 ```
 mygithubusername.github.io/
@@ -28,12 +29,14 @@ mygithubusername.github.io/
   |
   \_2021-12-17-exercise3.markdown
   |
-  \_2021-01-04-exercise11.markdown
+  \_2022-01-04-exercise11.markdown
   |
-  \_2021-01-04-exercise12.markdown
+  \_2022-01-04-exercise12.markdown
   |
-  \_2021-01-04-exercise13.markdown
+  \_2022-01-04-exercise13.markdown
 ```
+
+Note the date names of the `.markdown` files can reflect the actual date you completed them, not the dates given above.
 
 [last-warmup]: {{ site.baseurl }}{% link _posts/2021-12-17-day2_warmup.markdown %} 
 [lrthw]: https://learnrubythehardway.org/book/
