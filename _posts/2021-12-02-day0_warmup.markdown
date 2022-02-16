@@ -2,7 +2,7 @@
 layout: post
 title:  "Ruby 1-0: Crushing the Development Environment"
 date:   2021-12-02 18:30:50 -0700
-categories: jekyll update
+categories: Warm-Up
 ---
 Today we're going to warm up with some pretty routine but essential stuff, I'll admit that being a developer is very usually NOT like the Matrix or War Games or any other G---ler romanticizing of people interacting with computers. But things will get fun during the course, trust me. 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Ruby 1-2: Better Than a Journo Can Do"
 date:   2021-12-17 00:05:00 -0700
-categories: jekyll update
+categories: Warm-Up
 ---
 Ever since the 2008 recession, journalists were feeling ever-so-helpful in explaining that workers in 'outmoded' industries could learn to code. With layoffs at many online publications like Huffpost and Buzzfeed in later years, these unemployed journalists' Twitter feeds were filled with brilliant albeit mocking suggestions that these journalists learn to code. The gammas couldn't handle it and complained so much Twitter began to consider the suggestion as grounds for a banning. Go figure.
 

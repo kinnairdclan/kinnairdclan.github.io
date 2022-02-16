@@ -129,14 +129,15 @@ select{
 |02/01/2022 6:00-7:30PM MT|Ruby 1-0 A|[Tuesday Bears Learn Ruby Day 0][2-1-22]|Free|14+|
 |02/05/2022 11:30AM-1:00PM MT|Ruby 1-0 C|[Saturday Bears Learn Ruby Day 0][2-5-22]|Free|14+|
 |02/08/2022 6:00-7:30PM MT|Ruby 1-1 A|[Tuesday Bears Learn Ruby Day 1][2-8-22]|$20|14+|
-|02/12/2022 11:30AM-1:00PM MT|Ruby 1-1 C|[Saturday Bears Learn Ruby Day 1][2-12-22a]|$20|14+|
 |02/12/2022 1:30PM-3:00PM MT|Ruby 1-0 D|[Saturday Bears Learn Ruby Day 0 (Delta Class)][2-12-22b]|Free|14+|
 |02/15/2022 6:00-7:30PM MT|Ruby 1-2 A|[Tuesday Bears Learn Ruby Day 2][2-15-22]|$20|14+|
-|02/19/2022 11:30AM-1:00PM MT|Ruby 1-2 C|[Saturday Bears Learn Ruby Day 2][2-19-22]|$20|14+|
+|02/19/2022 11:30AM-1:00PM MT|Ruby 1-1 C|[Saturday Bears Learn Ruby Day 1][2-19-22]|$20|14+|
 |02/22/2022 6:00-7:30PM MT|Ruby 1-3 A|[Tuesday Bears Learn Ruby Day 3][2-22-22]|$20|14+|
-|02/26/2022 11:30AM-1:00PM MT|Ruby 1-3 C|[Saturday Bears Learn Ruby Day 3][2-26-22]|$20|14+|
+|02/26/2022 11:30AM-1:00PM MT|Ruby 1-2 C|[Saturday Bears Learn Ruby Day 2][2-26-22]|$20|14+|
 |03/01/2022 6:00-7:30PM MT|Ruby 1-4 A|[Tuesday Bears Learn Ruby Day 4][3-01-22]|$20|14+|
-|03/05/2022 11:30AM-1:00PM MT|Ruby 1-4 C|[Saturday Bears Learn Ruby Day 4][3-05-22]|$20|14+|
+|03/05/2022 11:30AM-1:00PM MT|Ruby 1-3 C|[Saturday Bears Learn Ruby Day 3][3-05-22]|$20|14+|
+|03/08/2022 6:00-7:30PM MT|Ruby 1-5 A|Tuesday Bears Learn Ruby Day 5|$20|14+|
+|03/12/2022 11:30AM-1:00PM MT|Ruby 1-4 C|Saturday Bears Learn Ruby Day 4|$20|14+|
 
 [2-1-22]: https://calendar.google.com/event?action=TEMPLATE&tmeid=MjRwM21ocDRhaXFiOTBxaGpvZHI2dDZsZXUgMG0yN29qZm45YXAzMTBiZmYwNmYycWptNW9AZw&tmsrc=0m27ojfn9ap310bff06f2qjm5o%40group.calendar.google.com
 [2-5-22]: https://calendar.google.com/event?action=TEMPLATE&tmeid=M3MwcmJqdHZyNGFqb3RrbHVmbGNwMHJkaDUgMG0yN29qZm45YXAzMTBiZmYwNmYycWptNW9AZw&tmsrc=0m27ojfn9ap310bff06f2qjm5o%40group.calendar.google.com

@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "Ruby 1-5: Homework 1"
+title:  "Ruby 1-5: Your Homestead Inventory Tracker"
 date:   2022-01-10 00:05:00 -0700
-categories: jekyll update
+categories: Homework
 ---
 
 Welcome to your first homework assignment! Unlike previous warmups, I recommend you look at this homework early and often, and get started with more time than you usually would with the warmups.
 
-By the time we hit day four, have this assignment done and runnable on your virtual environment as a script. If you need any assistance along the way please reach out to me in the chat, I DO have some scaffolding that will get you started if you feel truly stumped.
+By the time we hit class Ruby 1-5, have this assignment done and runnable on your virtual environment as a script. If you need any assistance along the way please reach out to me in the chat, I DO have some scaffolding that will get you started if you feel truly stumped.
 
 Assignment
 ---
-For this homework we want to take a load off our brains and have a script keep track of some good in our homestead inventory. Write a script that keeps track of a quantity of goods of your choice, be it cords of wood, bags of flour, gallons of gasoline, or whatever else you can think of. This script should store the quantity of good you have in inventory in a **text file** modified over time as you add to, remove from, or check on your inventory. For simplicity's sake, only have the script work with one type of good stored as a single number in the first line of the text file. I also want to see the use of at least one **command line argument** passed into the script using `ARGV`. I recommend the text file's name as a good choice here.
+For this homework we want to take a load off our brains and have a script keep track of some good in our homestead inventory. Write a script that keeps track of a quantity of goods of your choice, be it cords of wood, bags of flour, gallons of gasoline, or whatever else you can think of. This script should store the quantity of good you have in inventory in a **text file** modified over time as you add to, remove from, or check on your inventory. For simplicity's sake, only have the script work with one type of good stored as a single number in the first line of the text file. I also want to see the text file's name passed into the script as a **command line argument** using `ARGV`.
 
 In the script, the inventory file should be accessed in three different ways, expressed in the following **functions** you create:
 
@@ -19,27 +19,30 @@ In the script, the inventory file should be accessed in three different ways, ex
 
 {% highlight ruby %}
 def check_inventory(text_file_name)
-if !File.exist?(text_file_name)
-  return 0
-end
-#
-# your code here below
-#
+  if !File.exist?(text_file_name)
+    return 0
+  end
+  #
+  # your code here below
+  #
 end
 {% endhighlight %}
-Note: As I've done above, `text_file_name` found via `ARGV` should probably be passed into this function as an **argument**.
+Note: As I've done above, `text_file_name` found via `ARGV` should be passed into all these functions as an **argument**.
 
+{:start="2"}
 2. An `add_to_inventory` function that *opens* up our inventory file in `'w'` mode, and modifies the quantity by however much of the item you have added to the inventory using `.to_i` and addition. It then writes the new quantity and closes the file. This function should also not care if the file exists or not, it will create it if it does not exist (because it opens the inventory file in `'w'` mode).
 
+{:start="3"}
 3. A `remove_from_inventory` function that does the same thing as `add_to_inventory` but instead takes away stock from your inventory (subtraction). It also interacts with your inventory file in a complete manner, *opening* and *closing* the file on its own. This function should also not care if the file exists or not, it will create it if it does not exist (because it opens the inventory file in `'w'` mode).
 
+{:start="4"}
 4. A main body of your script that:
   - Uses `check_inventory` alongside a `puts` statement to tell you how much you have in stock.
   - Asks you how much you added to your stores via `puts`, gets an answer using `$stdin.gets.chomp`, and calls `add_to_inventory` to modify your inventory.
   - Asks you how much you removed from your stores via `puts`, gets an answer using `$stdin.gets.chomp`, and calls `remove_from_inventory` to modify your inventory.
   - Makes a final call to `check_inventory` alongside a `puts` statement to tell you your updated amount in stock.
 
-The final product should execute at least somewhat like the below:
+Say we named our program `take_stock.rb`. The final product should execute at least somewhat like the below:
 
 ```
 $ ruby ./take_stock.rb gravy.txt 
