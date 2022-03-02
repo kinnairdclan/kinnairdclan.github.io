@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ruby 1-6: Boolean Logic Review"
+title:  "Ruby 1-6: The Good, the True, and the Boolean"
 date:   2022-01-11 00:05:00 -0700
 categories: Warm-Up
 ---
