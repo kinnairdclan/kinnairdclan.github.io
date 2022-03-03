@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Ruby 1-5: Your Homestead Inventory Tracker"
+title:  "Ruby 1-6: Your Homestead Inventory Tracker"
 date:   2022-01-10 00:05:00 -0700
 categories: Homework
 ---
 
 Welcome to your first homework assignment! Unlike previous warmups, I recommend you look at this homework early and often, and get started with more time than you usually would with the warmups.
 
-By the time we hit class Ruby 1-5, have this assignment done and runnable on your virtual environment as a script. If you need any assistance along the way please reach out to me in the chat, I DO have some scaffolding that will get you started if you feel truly stumped.
+By the time we hit class Ruby 1-7, have this assignment done and runnable on your virtual environment as a script. If you need any assistance along the way please reach out to me in the chat, I DO have some scaffolding that will get you started if you feel truly stumped.
 
 Assignment
 ---

@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Ruby 1-6: The Good, the True, and the Boolean"
+title:  "Ruby 1-7: Growing Branches (of code)"
 date:   2022-01-11 00:05:00 -0700
 categories: Warm-Up
 ---
 
-Last week we had the Homework as our Warm-Up and then dove into boolean Logic. Boolean logic is something I want us to get down pat, so for today's warm-up read and complete **Excercise 28: Boolean Practice** in Shaw. The exercise asks that you look at a series of boolean statements and try to determine what the outcome will be before testing each statement out. I would recommend after making your "prediction" that you test each statment out in `irb`.
+In the past two weeks we've had our Homework and dove into boolean logic. Boolean logic is something I want us to get down pat, so for today's warm-up read and complete **Excercise 28: Boolean Practice** in Shaw. The exercise asks that you look at a series of boolean statements and try to determine what the outcome will be before testing each statement out. I would recommend after making your "prediction" that you test each statment out in `irb`.
 
 If some of the longer statements frustrate you, check out Shaw's technique lower down in the exercise to simplify the statements before evaluating them. This technique is invaluable even for veteran programmers. Oftentimes boolean logic seems simple to start with, but can get out of hand if we aren't careful!
 
