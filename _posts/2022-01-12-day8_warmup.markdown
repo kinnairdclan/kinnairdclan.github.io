@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Ruby 1-8: Object Oriented Crushing"
+date:   2022-01-12 00:05:00 -0700
+categories: Warm-Up
+---
+
+I really want us to get Object-Oriented program design and the usage of classes to make it happen on a conceptual level. Shaw is trying to introduce us to classes by reviewing what we've done with Modules, so for today's warm-up please review what you did back in your [**Excercise 25 module work**][lrthw25] before taking a long read through [**Excercise 40: Modules, Classes, and Objects**][lrthw40]. In excercise 40 there is one section of code Shaw actually wants you to type up involving a class under the heading "A First Class Example," so write that up as a script and run it under `ruby`.
+
+
+The Extra Mile (Optional)
+---
+
+Make this script into a new Jekyll post as was an option in the in the [day 2 warmup][day-2-warmup] (follow instructions on how to do this there). `git add`, `git commit`, and `git push` the new post it as we've done in the past to get it live on the Internet!
+
+
+[lrthw25]: https://learnrubythehardway.org/book/ex25.html
+[lrthw40]: https://learnrubythehardway.org/book/ex40.html
+[day-2-warmup]: {{ site.baseurl }}{% link _posts/2021-12-17-day2_warmup.markdown %} 
