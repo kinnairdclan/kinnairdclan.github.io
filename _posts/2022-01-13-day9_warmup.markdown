@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "Ruby 1-9: Final Project"
+date:   2022-01-13 00:05:00 -0700
+categories: Homework
+---
+
+We've gotten through the majority of Shaw as far Ruby programming is concerned, and I think the scope of this module is about at an end as far as the teaching goes. I am super proud of all of you, you've shown such diligence in sticking with it! One of the signs of a great programmer is someone who doesn't give up and you've exemplified that in spades. 
+
+However, as Shaw mentions, "You need to learn to feed yourself." My next step is to help you on a 1-on-1 basis with final projects. My goal with these 'finals' is to present multiple projects of varying difficulty that all of you can tackle **at least one** of them your own. While I'd prefer infinite time and no due date, real programming has deadlines and so I'm making your completion of one of these due by **Tuesday, May 17, 2022**. Check in with me either in the chat or in email to tell me the project you'd like to undertake in detail. If you finish ahead of time, show off your work in the chat and encourage your classmates, and think about tackling another! 
+
+After dipping your toes in the project you want to undertake, schedule time with me this month so we can walk through how to tackle stuff you're stuck on, whether it's getting your tasks oriented at the beginning of the project or finishing up that dastardly final 10% of your code.
+
+Medium Projects
+---
+Each of these projects should not take more than 8 hours to research and complete, and may take way less if everything 'clicks'. They work with our existing tools and programs we have made and make them better/cooler while demonstrating your competence in both the command line and the Ruby programming ecosystem.
+
+1. **Re-write a copy of your inventory program to use an inventory Class**, which re-implements all the file operations we wrote before in functions within new class functions. Instead of calling functions like `remove_from_inventory`, `add_to_inventory` straight from the script, you'd create an instance of `inventory` from your new class in the script and call things like `inventory.remove(<number>)` and `inventory.add(<number>)`. Our content on building classes will be invaluable here.
+Extra cool but optional: The entire functionality of `check_inventory` can instead become an attribute of `inventory` read in from the inventory file at program startup and written to the inventory file at program completion. No longer calling `check_inventory` tons of times during the script, you can simply check on `inventory.stock` or some similarly-named instance variable during the execution of the other functions. You must show me your command line program in action by the due date.
+
+2. Using the [Thor Gem][tg], **re-write your inventory program as a proper command line tool that can perform singular adds, removes, and checks on your inventory depending on new command line switches** you write using Thor's functionality. For example, instead of asking all three questions, calling your new `take_stock.rb` with the command line switch of `--remove` in the form of `./take_stock.rb --remove ./gravy.txt` might only ask you the removal question and write the changes to your file before exiting. Before undertaking this project, be sure to study how to work with Thor with guides [like this one][tg1]. You must show me your command line program in action by the due date.
+
+3. Research how to **change your Jekyll blog theme** and change it up to something cooler than this default theme. Remember back in 1-1 and 1-4 we worked in a special dependencies file called the `Gemfile`, you'll likely be doing so again. Make sure the theme is specifically `github-pages` compatible. Get it pushed up to GitHub as per usual, and then think of something you'd like to add as a new non-post page to your site. Maybe an about page that describes you and your interests? You can browse themes at places like [jekyllthemes.org][jt]. Have your new theme up on your .github.io page by the due date (that means using `git` commands!)
+
+Harder Projects
+---
+These projects are heftier in both their time requirements and scope, possibly multiple days. You'll demonstrate great diligence and ingenuity if you complete one of these!
+
+1. **Write a demo Ruby on Rails application**. A good next logical step in your Ruby journey is to take your Ruby knowledge and apply it to grander tasks while standing on the shoulders of those who have coded before. Ruby on Rails is a solid, wildly popular web application **framework** that allows you to make very rich web applications that, unlike Jekyll, can be interacted with by the end user (user logins, for example). There are hundreds of beginner Ruby on Rails guides out there, but if you are a visual learner like me I recommend Ruby's own tutorial [Getting Started With Rails][gswr]. For those who want a video-based lesson in which you'll actually be completing the Rails project along the way, I recommend [Codemy's full course video][codemy]. You must be able to show me your Rails application running in your development environment on `localhost` (remember that's how Jekyll runs locally?) by the due date.
+
+2. **Write your own version of Shaw's Exercise 43 game with a lexical parser.** This is essentially going further in Learn Ruby the Hard Way and creating your own game using Shaw's class-design methodology he outlines in Exercise 43, and moving on to Exercises 45, 46, 47, 48, and 49. With a lexical parser, you'll have a text-based game that can take all sorts of user input and generally intuit what the user meant to say at every stage of the game rather than requiring the exact right answer. Cool! I will be there to help and all the answers will be in Learn Ruby the Hard Way, but your large program will require tests, so you'll learn how to write Ruby tests to test your code. Take this one on if you want to blaze ahead in the pure Ruby world!
+
+3. **Propose your own project**. I am certainly open to proposals to command line programs or Jekyll websites you'd want to make on your own. They must be in Ruby, and run it past me before you undertake so I can make sure it's appropriate and doable.
+
+[tg]:https://github.com/rails/thor
+[tg1]:https://www.bounga.org/ruby/2011/09/12/thor-a-command-line-scripting-tool/
+[jt]:http://jekyllthemes.org/
+[gswr]:https://guides.rubyonrails.org/getting_started.html
+[codemy]:https://www.youtube.com/watch?v=fmyvWz5TUWg
