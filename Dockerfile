@@ -1,4 +1,4 @@
-FROM ruby:2.7.5
+FROM ruby:2.7.6
 LABEL maintainer="Johannes Schickling <schickling.j@gmail.com>"
 
 ENV DEBIAN_FRONTEND noninteractive
