@@ -14,6 +14,9 @@ steps:
     password:
       from_secret: dockerhub_access_token
   commands: 
-    - docker build --rm=true --no-cache -t kinnairdclan/coderbears_blog_dev $PWD
-    - docker build --rm=true --no-cache -t kinnairdclan/coderbears_blog -f $PWD/Dockerfile.production $PWD
+    - docker build --rm=true --no-cache -t kinnairdclan/coderbears_blog_dev .
+    - docker build --rm=true --no-cache -t kinnairdclan/coderbears_blog -f ./Dockerfile.production .
     - docker push kinnairdclan/coderbears_blog:latest
+  volumes:
+    - name: docker
+      path: /var/run/docker.sock
