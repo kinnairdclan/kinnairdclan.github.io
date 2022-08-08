@@ -16,7 +16,7 @@ steps:
   commands: 
     - apk add --update make
     - docker build -t kinnairdclan/coderbears_blog_dev /drone/src
-    - docker run --rm --volume /drone/src:/srv/jekyll kinnairdclan/coderbears_blog_dev ls -al && bundle exec jekyll build .
+    - docker run --rm --volume /drone/src:/srv/jekyll kinnairdclan/coderbears_blog_dev cd /srv/jekyll && bundle exec jekyll build .
     - docker build --no-cache -t kinnairdclan/coderbears_blog -f /drone/src/Dockerfile.production /drone/src
     - make push_prod
   volumes:
