@@ -15,8 +15,6 @@ steps:
       from_secret: dockerhub_access_token
   commands: 
     - apk add --update make
-    - make build_dev
-    - make serve_dev
     - make build_prod
     - make push_prod
   volumes:
