@@ -15,10 +15,12 @@ steps:
       from_secret: dockerhub_access_token
   commands: 
     - apk add --update make
-    - make build_prod
+    - docker run -it --rm kinnairdclan/coderbears_blog_dev bundle exec jekyll build $PWD
+    - docker run --rm --volume $PWD:/srv/jekyll kinnairdclan/coderbears_blog_dev bundle exec jekyll build
+    - docker build --no-cache -t kinnairdclan/coderbears_blog -f ${PWD}/Dockerfile.production $PWD
     - make push_prod
   volumes:
-    - name: docker
+    - name: docker  
       path: /var/run/docker.sock
 volumes:
   - name: docker
