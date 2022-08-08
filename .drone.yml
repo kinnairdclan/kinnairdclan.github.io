@@ -14,11 +14,10 @@ steps:
     password:
       from_secret: dockerhub_access_token
   commands: 
-    - echo "$PWD"
     - apk add --update make
-    - docker build --no-cache -t kinnairdclan/coderbears_blog_dev $PWD
-    - docker run --rm --volume $PWD:/srv/jekyll kinnairdclan/coderbears_blog_dev bundle exec jekyll build $PWD
-    - docker build --no-cache -t kinnairdclan/coderbears_blog -f $PWD/Dockerfile.production $PWD
+    - docker build -t kinnairdclan/coderbears_blog_dev /drone/src
+    - docker run --rm --volume /drone/src:/srv/jekyll kinnairdclan/coderbears_blog_dev bundle exec jekyll build /drone/src
+    - docker build --no-cache -t kinnairdclan/coderbears_blog -f /drone/src/Dockerfile.production /drone/src
     - make push_prod
   volumes:
     - name: docker  
