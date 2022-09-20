@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ruby 1-6: Your Homestead Inventory Tracker"
+title:  "Ruby 1-5: Your Homestead Inventory Tracker"
 date:   2022-01-10 00:05:00 -0700
 categories: Homework
 ---
