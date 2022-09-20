@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "Ruby 1-1: You Better Git!"
+title:  "Ruby 1-1: You Better Git! Part 1"
 date:   2021-12-10 20:05:00 -0700
 categories: Warm-Up
 ---
 Today's warmup will be neat--we're going to be making our Jekyll app backed up on the Internet with some introductory `git` commands.
 
-`git` is a tool that allows you to back up your code and all revisions you make to it in a manner that allows you to access any revision in case you want to revert back. It's great for making sure you always have a back up of stable working code while you develop new, perhaps unstable features. I'll be spending all Day 1 discussing `git`--it's that essential of a tool. So let's learn some basic `git` commands.
+`git` is a tool that allows you to back up your code and all revisions you make to it in a manner that allows you to access any revision in case you want to revert back. It's great for making sure you always have a back up of stable working code while you develop new, perhaps unstable features. I'll be spending all Day 1 and Day 2 discussing `git`--it's that essential of a tool. So let's learn some basic `git` commands.
 
 Signing Into Git
 ---
 
-Before we work in our repository let's make sure `git` understand *us*, that is who will be making the code changes and creating a coding history.
+Before we work in our repository let's make sure `git` understands *us*, that is the person who will be making the code changes and creating a coding history.
 
 Run the following commands so that `git` authors your changes as actually yours:
 

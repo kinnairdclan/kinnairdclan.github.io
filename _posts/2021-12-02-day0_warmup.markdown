@@ -36,7 +36,7 @@ You can think of a virtual machine as an operating system within an operating sy
 ![import-into-virtualbox1](/assets/images/day0/day0_vboximport1.png){:class="img-responsive"}
 
 {:start="5"}
-5. You should now have the VM loaded into VirtualBox. Hit the green **Start** arrow with it highlighted and it's off to the races.
+5. You should now have the VM loaded into VirtualBox. Hit the green **Start** arrow with it highlighted and it's off to the races. If you run into a blank black screen at startup or otherwise cannot boot, please reach out to me at the email at the bottom of the blog!
 
 ![import-into-virtualbox1](/assets/images/day0/day0_vboximport2.png){:class="img-responsive"}
 
@@ -57,19 +57,19 @@ Meet the CLI
 ---
 
 {:start="8"}
-8. You'll probably want to change the default password to something only you'll know. Let's get acquainted with the **command line interface** or **CLI**. Click the **Terminal** icon to the left to open a terminal, and then type in the command `passwd coderbear` to indicate that you want to change coderbear's password. Follow the prompts hitting enter each time.
+8. You'll probably want to change the default password to something only you'll know. Let's get acquainted with the **command line interface** or **CLI**. Click the **Terminal** icon to the left to open a terminal, and then type in the command `passwd coderbear` to indicate that you want to change coderbear's password. Follow the prompts hitting enter each time. Note when you enter your password text for security reasons they will NOT animate on the terminal as asterisks, but they are being typed and read into the password changer.
 
 ![import-into-virtualbox1](/assets/images/day0/day0_vboximport4.png){:class="img-responsive"}
 
 {:start="9"}
-9. Because it's a long operation and we don't want to waste class time, we're going to install the [**Ruby**][ruby-lang] version we'll need to make our coding blogs. This is the perfect example of setting up a development environment, we are defining the Ruby version we shall use for this project as `2.7.x`. As of this writing the latest offered by the installed tool `rbenv` is `2.7.5`, so let's install that with `rbenv install 2.7.5`. Put simply, **Ruby** is the engine that allows **Jekyll** code (written in Ruby) to be executed on our development environment.
+9. Because it's a long operation and we don't want to waste class time, we're going to install the [**Ruby**][ruby-lang] version we'll need to make our coding blogs. This is the perfect example of setting up a development environment, we are defining the Ruby version we shall use for this project as `2.7.x`. As of this writing the latest offered by the installed tool `rbenv` is `2.7.6`, so let's install that with `rbenv install 2.7.6`. Put simply, **Ruby** is the engine that allows **Jekyll** code (written in Ruby) to be executed on our development environment.
 
 {% highlight terminal %}
-coderbear@coderbear-VirtualBox:~$ rbenv install 2.7.5
-Downloading ruby-2.7.5.tar.bz2...
--> https://cache.ruby-lang.org/pub/ruby/2.7/ruby-2.7.5.tar.bz2
-Installing ruby-2.7.5...
-Installed ruby-2.7.5 to /home/coderbear/.rbenv/versions/2.7.5
+coderbear@coderbear-VirtualBox:~$ rbenv install 2.7.6
+Downloading ruby-2.7.6.tar.bz2...
+-> https://cache.ruby-lang.org/pub/ruby/2.7/ruby-2.7.6.tar.bz2
+Installing ruby-2.7.6...
+Installed ruby-2.7.6 to /home/coderbear/.rbenv/versions/2.7.6
 coderbear@coderbear-VirtualBox:~$ 
 {% endhighlight %}
 
