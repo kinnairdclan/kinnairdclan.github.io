@@ -11,7 +11,6 @@ steps:
     password:
       from_secret: dockerhub_access_token
   commands:
-    - gem update --system 3.4.2 > /dev/null #This was crazy verbose and --quiet wasn't working
     - gem install bundler
     - bundle install
     - bundle exec jekyll build
