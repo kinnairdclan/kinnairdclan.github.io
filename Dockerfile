@@ -1,11 +1,10 @@
-FROM ruby:2.7.6
+FROM ruby:2.7.7
 LABEL maintainer="Johannes Schickling <schickling.j@gmail.com>"
 
 ENV DEBIAN_FRONTEND noninteractive
 
-#ADD install.sh install.sh
-#RUN sh install.sh && rm install.sh
-RUN gem install jekyll bundler
+RUN gem update --system 3.4.2 > /dev/null #insanely verbose with all changelogs and no way to --quiet
+RUN gem install bundler
 VOLUME ["/srv/jekyll"]
 WORKDIR /srv/jekyll
 COPY Gemfile Gemfile
